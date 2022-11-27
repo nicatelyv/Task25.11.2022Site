@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap%27");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: white;
+}
+
+* {
+  font-family: "Epilogue";
+}
+
+nav {
+  width: 100%;
+  height: 300px;
+  background-color: #28293E;
+}
+nav .nav_container {
+  max-width: 1150px;
+  height: 67px;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav_container button {
+  width: 110px;
+  height: 40px;
+  background-color: #28293E;
+  border: 1px solid rgb(114, 109, 109);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+}
+nav .nav_container .nav_links {
+  width: 400px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+nav .nav_container .nav_links ul {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin-right: 45px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+}
+nav .nav_container .agency_logo_container {
+  width: 120px;
+  height: 40px;
+}
+nav .nav_container .agency_logo_container p {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 25px;
+}
+nav .nav_container .agency_logo_container .polygon_icon {
+  width: 30px;
+  height: 30px;
+  margin: 2px 5px;
+  display: flex;
+  z-index: -1;
+}
+nav .nav_container .agency_logo_container .polygon_icon #agency_logo {
+  margin-left: -24.5px;
+  margin-top: 7.3px;
+  width: 17px;
+  height: 17px;
+}
+nav .nav_texts {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+  width: 511px;
+  height: 200px;
+  left: 500px;
+  top: 60px;
+}
+nav .nav_texts h1 {
+  font-size: 50px;
+  font-weight: 800px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+nav .nav_texts p {
+  font-weight: 400px;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  color: rgb(178, 167, 167);
+}
+nav .hamburger_menu {
+  display: none;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .nav_container button {
+    display: none;
+  }
+  nav .nav_container .nav_links {
+    display: none;
+  }
+  nav .nav_container .agency_logo_container p {
+    font-size: 20px;
+  }
+  nav .nav_container .agency_logo_container .polygon_icon {
+    width: 40px;
+    height: 40px;
+  }
+  nav .nav_container .agency_logo_container .polygon_icon #agency_logo {
+    margin-left: -33.5px;
+    width: 25px;
+    height: 25px;
+  }
+  nav .nav_texts {
+    width: 200px;
+    height: 150px;
+    left: 10px;
+    top: 80px;
+    margin: 0 70px;
+  }
+  nav .nav_texts h1 {
+    font-size: 50px;
+  }
+  nav .nav_texts p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  nav .hamburger_menu {
+    display: block;
+    margin: 0 -20px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid grey;
+  }
+}
+main {
+  width: 100%;
+  height: 330vh;
+  background-color: #FDF0E9;
+}
+main .cards_section .card_links {
+  max-width: 600px;
+  height: 100px;
+  align-items: center;
+  margin-left: 500px;
+  text-align: center;
+  display: flex;
+}
+main .cards_section .card_links a {
+  color: black;
+  margin-left: 50px;
+}
+main .cards_section .cards {
+  margin-left: 150px;
+  height: 180vh;
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .cards_section .cards button {
+  cursor: pointer;
+  margin: 0 auto;
+  width: 130px;
+  height: 50px;
+  background-color: white;
+  border: 0;
+}
+main .cards_section .cards .card1 {
+  width: 300px;
+  height: 350px;
+  margin: 40px 100px;
+  background-image: url(../imgs/card1img.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .cards_section .cards .card1 button {
+  margin: 200px 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 40px;
+  border: 0;
+  font-size: 17px;
+}
+main .cards_section .cards .card1 h2 {
+  margin: -190px 35px;
+  font-size: 40px;
+}
+main .cards_section .cards .card2 {
+  width: 300px;
+  height: 350px;
+  margin: 40px -50px;
+  background-image: url(../imgs/card2img.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .cards_section .cards .card2 button {
+  margin: 200px 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 40px;
+  border: 0;
+  font-size: 17px;
+}
+main .cards_section .cards .card2 h2 {
+  margin: -190px 35px;
+  font-size: 40px;
+}
+main .cards_section .cards .card3 {
+  width: 300px;
+  height: 350px;
+  margin: 40px 100px;
+  background-image: url(../imgs/card3img.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .cards_section .cards .card3 button {
+  margin: 200px 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 40px;
+  border: 0;
+  font-size: 17px;
+}
+main .cards_section .cards .card3 h2 {
+  margin: -190px 35px;
+  font-size: 40px;
+}
+main .cards_section .cards .card4 {
+  width: 300px;
+  height: 350px;
+  margin: -10px 100px;
+  background-image: url(../imgs/card4img.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .cards_section .cards .card4 button {
+  margin: 200px 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 40px;
+  border: 0;
+  font-size: 17px;
+}
+main .cards_section .cards .card4 h2 {
+  margin: -190px 35px;
+  font-size: 40px;
+}
+main .cards_section .cards .card5 {
+  width: 300px;
+  height: 350px;
+  margin: -10px -50px;
+  background-image: url(../imgs/card5img.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .cards_section .cards .card5 button {
+  margin: 200px 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 40px;
+  border: 0;
+  font-size: 17px;
+}
+main .cards_section .cards .card5 h2 {
+  margin: -190px 35px;
+  font-size: 40px;
+}
+main .cards_section .cards .card6 {
+  width: 300px;
+  height: 350px;
+  margin: -10px 100px;
+  background-image: url(../imgs/card6img.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .cards_section .cards .card6 button {
+  margin: 200px 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 40px;
+  border: 0;
+  font-size: 17px;
+}
+main .cards_section .cards .card6 h2 {
+  margin: -190px 35px;
+  font-size: 40px;
+}
+main .cards_section .cards .card7 {
+  width: 300px;
+  height: 350px;
+  margin: 40px 100px;
+  background-image: url(../imgs/card7img.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .cards_section .cards .card7 button {
+  margin: 200px 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 40px;
+  border: 0;
+  font-size: 17px;
+}
+main .cards_section .cards .card7 h2 {
+  margin: -190px 35px;
+  font-size: 40px;
+}
+main .cards_section .cards .card8 {
+  width: 300px;
+  height: 350px;
+  margin: 40px -50px;
+  background-image: url(../imgs/card8img.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .cards_section .cards .card8 button {
+  margin: 200px 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 40px;
+  border: 0;
+  font-size: 17px;
+}
+main .cards_section .cards .card8 h2 {
+  margin: -190px 35px;
+  font-size: 40px;
+}
+main .cards_section .cards .card9 {
+  width: 300px;
+  height: 350px;
+  margin: 40px 100px;
+  background-image: url(../imgs/card9img.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .cards_section .cards .card9 button {
+  margin: 200px 30px;
+  width: 90px;
+  height: 35px;
+  border-radius: 40px;
+  border: 0;
+  font-size: 17px;
+}
+main .cards_section .cards .card9 h2 {
+  margin: -190px 35px;
+  font-size: 40px;
+}
+main .dream_project {
+  margin: 40px 150px;
+  height: 80vh;
+  max-width: 80%;
+  display: flex;
+  background-color: #EF6D58;
+}
+main .dream_project #main_div {
+  width: 1000px;
+  height: 65vh;
+  margin: auto auto;
+}
+main .dream_project #main_div #h2_text {
+  width: 450px;
+  height: 250px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+main .dream_project #main_div #h2_text h2 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: -1px;
+}
+main .dream_project #main_div #p_text {
+  width: 450px;
+  height: 150px;
+  color: rgba(255, 255, 255, 0.64);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+main .dream_project #main_div #p_text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+main .dream_project #main_div button {
+  width: 140px;
+  height: 50px;
+  background-color: white;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+main .dream_project #main_div button a {
+  color: black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .dream_project #main_div #my_profile {
+  width: 500px;
+  height: 400px;
+  margin-left: 520px;
+  margin-top: -410px;
+}
+main .bottom_nav {
+  margin: 40px 150px;
+  height: 250px;
+  max-width: 80%;
+  display: flex;
+  display: flex;
+}
+main .bottom_nav #h4_text_bnav {
+  position: absolute;
+  width: 150px;
+  height: 210px;
+  left: 150px;
+  top: 2470px;
+}
+main .bottom_nav #h4_text_bnav h4 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+main .bottom_nav #bnav_menu {
+  position: absolute;
+  width: 100px;
+  height: 210px;
+  left: 450px;
+  top: 2470px;
+  flex-direction: column;
+}
+main .bottom_nav #bnav_menu h5 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #EF6D58;
+}
+main .bottom_nav #bnav_menu a {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+main .bottom_nav #bnav_service {
+  position: absolute;
+  width: 100px;
+  height: 210px;
+  left: 700px;
+  top: 2470px;
+  flex-direction: column;
+}
+main .bottom_nav #bnav_service h5 {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #EF6D58;
+}
+main .bottom_nav #bnav_service a {
+  color: black;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+main .bottom_nav #bnav_icon {
+  width: 200px;
+  height: 60px;
+  left: 1160px;
+  top: 2470px;
+  position: absolute;
+  display: flex;
+  gap: 14px;
+}
+main .bottom_nav #bnav_icon #bnavIcon1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #EF6D58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+main .bottom_nav #bnav_icon #bnavIcon2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #EF6D58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+main .bottom_nav #bnav_icon #bnavIcon3 {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #EF6D58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+main #footer_line {
+  margin: 40px 150px;
+  height: 2px;
+  max-width: 80%;
+  display: flex;
+  background-color: #F3D1BF;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  main .cards_section .card_links {
+    display: none;
+  }
+  main .cards_section .cards {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+  main .cards_section .cards button {
+    cursor: pointer;
+    margin: 0 auto;
+    width: 130px;
+    height: 50px;
+    background-color: white;
+    border: 0;
+  }
+  main .cards_section .cards .card1 {
+    margin: 40px 20px;
+  }
+  main .cards_section .cards .card2 {
+    margin: 0px 20px;
+  }
+  main .cards_section .cards .card3 {
+    margin: 40px 20px;
+  }
+  main .cards_section .cards .card4 {
+    margin: 0px 20px;
+  }
+  main .cards_section .cards .card5 {
+    margin: 0px 20px;
+  }
+  main .cards_section .cards .card6 {
+    margin: 0px 20px;
+  }
+  main .cards_section .cards .card7 {
+    margin: 0px 20px;
+  }
+  main .cards_section .cards .card8 {
+    margin: 0px 20px;
+  }
+  main .cards_section .cards .card9 {
+    margin: 0px 20px;
+  }
+}
+footer {
+  background-color: #FDF0E9;
+  display: flex;
+  height: 70px;
+}
+footer p {
+  margin: -10px 150px;
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  height: 20px;
+}
+footer a {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: black;
+  margin: -10px -480px;
+  padding-left: 1000px;
+  height: 20px;
+}/*# sourceMappingURL=main.css.map */
